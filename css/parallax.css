@@ -1,0 +1,20 @@
+.parallax-container {
+	height: 650px;
+}
+
+
+#row1, #row2 {
+	text-align: center;
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	padding: 30px;
+}
+
+.ptitle {
+	font-size: 12px;
+	color: white;
+}
