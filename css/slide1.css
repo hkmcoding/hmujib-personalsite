@@ -1,0 +1,54 @@
+.slide2 {
+	height: 100%;
+	margin-top: 0;
+}
+
+.parallax {
+    /* The image used */
+    background: url(../images/parallax.jpg);
+
+    /* Full height */
+    height: 612px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#row1, #row2 {
+	text-align: center;
+	height: 300px;
+}
+
+#row1 .box {
+	vertical-align: top;
+	padding-top: 80px;
+}
+
+#row2 .box {
+	vertical-align: top;
+}
+
+.icon {
+	size: 50px;
+}
+
+.box {
+	width: 25.00em;
+	height: 18.75em;
+	display: inline-block;
+	padding: 20px;
+	float: clear;
+}
+
+.box h3 {
+	color: white;
+	font-size: 30px;
+}
+
+.box p {
+	color: white;
+}
+

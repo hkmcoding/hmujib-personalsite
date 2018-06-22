@@ -7,15 +7,15 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<title>Humza Mujib</title>
-  	<link href="css/animate.min.css" rel="stylesheet" type="text/css">
-  	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  	<link href="css/animations.css" rel="stylesheet" type="text/css">
   	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   	<link href="https://fonts.googleapis.com/css?family=Ubuntu:100,300,400,500" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link href="css/navbar.css" rel="stylesheet" type="text/css">
   	<link href="css/header.css" rel="stylesheet" type="text/css">
   	<link href="css/styles.css" rel="stylesheet" type="text/css">
-  	<link href="css/parallax.css" rel="stylesheet" type="text/css">
+  	<link href="css/slide1.css" rel="stylesheet" type="text/css">
+  	<link href="css/slide3.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -49,60 +49,57 @@
 		</nav>
 
 		<div class="container">
-			<div class="center">
-					<h1 class="animated tada title">HUMZA MUJIB</h1>
-					<p class="animated fadeIn paragraph">I'm a recent B.Sc Information Technology graduate from the New Jersey Institute of Technology. I enjoy web design, entrepreneurship, coding, and much more. Thank you for visiting my personal site, please scroll down to learn more about me!</p>
+			<div class="animatedParent animateOnce center" data-sequence='1000'>
+					<h1 class="animated bounceIn delay-250 title" data-id='1'>HUMZA MUJIB</h1>
+					<p class="animated fadeInDownShort paragraph" data-id='2'>I'm a recent B.Sc Information Technology graduate from the New Jersey Institute of Technology. I enjoy web design, entrepreneurship, coding, and much more. Thank you for visiting my personal site, please scroll down to learn more about me!</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="panel2">
-		<div class="parallax-container">
-			<div class="parallax">
-		      	<img src="images/parallax.jpg">
-
-		      	<div id="row1">
-			      	<div id="box1" class="box">
-			      		<p class="ptitle">Video Games</p>
-			      	</div>
-			      	<div id="box2" class="box">
-			      		<p>Coding</p>
-			      	</div>
-			      	<div id="box3" class="box">
-			      		<p>Tech</p>
-			      	</div>
-			     </div>
-
-			    <div id="row2">
-			      	<div id="box4" class="box">
-						<p>Travel</p>
-			      	</div>
-			      	<div id="box5" class="box">
-			      		<p>Sports</p>
-			      	</div>
+	<div id="slide2" class="slide2">
+		<div id="parallax" class="parallax">
+			<div id="row1" class="animatedParent animateOnce" data-appear-top-offset='-300'>
+				<div id="box1" class="animated bounceInDown box">
+			 		<span class="icon"><img src="icons/game-controller.png"></span>
+			 		<h3>Video Games</h3>
+			 		<p>I've played video games for quite some time. I love how so many brilliant minds can come together to make one beautiful game. These days I play League of Legends and Fortnite.</p>
 			    </div>
+			    <div id="box2" class="animated bounceInDown box">
+			    	<span class="icon"><img src="icons/coding.png"></span>
+			 		<h3>Coding</h3>	
+			 		<p>I love to code and make cool things! Check out my Github if you want to see what I've made/worked on!
+			    </div>
+			    <div id="box3" class="animated bounceInDown box">
+			    	<span class="icon"><img src="icons/travel.png"></span>
+			 		<h3>Travel</h3>
+			 		<p>I recently found my love for travelling after studying abroad at Hanyang University in South Korea. My next stop is either Japan or Germany!</p>
+			    </div>
+			</div>
 
-		    </div>
+			<div id="row2" class="animatedParent animateOnce" data-appear-top-offset='-350'>
+				<div id="box4" class="animated bounceInUp box">
+					<span class="icon"><img src="icons/books.png"></span>
+			 		<h3>Learning</h3>
+			 		<p>I like to think of myself as a renaissance man. These days I'm learning about entrepreneurship, bodyweight fitness, and social media influence.
+				</div>
+			    <div id="box5" class="animated bounceInUp box">
+			    	<span class="icon"><img src="icons/dumbbell.png"></span>
+			 		<h3>Lifting</h3>
+			 		<p>Gotta get them gains bro!</p>	
+			    </div>
+			</div>
 		</div>
-		<h1>test</h1>
-		<h2>test</h2>
-		<h3>test</h3>
-		<div class="parallax-container">
-			<div class="parallax">
-		      	<img src="images/bg2.jpg">
-		    </div>
+
+		<div class="slide3">
+			<h3>Course Work</h3>
 		</div>
+
+		<div class="parallax"></div>
 	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/css3-animate-it.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script> 
-		//Initialise 
-      	$(document).ready(function(){
-      	$('.parallax').parallax();
-      	}); 
-	</script>
 
 </body>
 </html>
