@@ -16,6 +16,7 @@
   	<link href="css/styles.css" rel="stylesheet" type="text/css">
   	<link href="css/slide1.css" rel="stylesheet" type="text/css">
   	<link href="css/slide3.css" rel="stylesheet" type="text/css">
+  	<link href="css/contact.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -23,24 +24,24 @@
 		
 		<nav class="navbar .fixed-top navbar-expand-sm navbar-trans">
    			<div class="container-fluid">
-   				<ul class="nav navbar-nav mx-auto">
+   				<ul id="top-menu" class="nav navbar-nav mx-auto">
    					<li class="nav-item">
-			      		<a class="nav-link" href="#">Home
+			      		<a class="nav-link" id="page1">Home
 			      			<i class="material-icons">home</i>
 			      		</a>
 			    	</li>
 			    	<li class="nav-item">
-			      		<a class="nav-link" href="#">About Me
+			      		<a class="nav-link" id="aboutme">About Me
 			      			<i class="material-icons">account_box</i>
 			      		</a>
 			    	</li>
 			    	<li class="nav-item">
-			      		<a class="nav-link" href="#">Portfolio
+			      		<a class="nav-link" id="coursework">Portfolio
 			      			<i class="material-icons">perm_media</i>
 			      		</a>
 					</li>
 					<li class="nav-item">
-			      		<a class="nav-link" href="#">Contact
+			      		<a class="nav-link" id="contact">Contact
 			      			<i class="material-icons">contacts</i>
 			      		</a>
 					</li>
@@ -90,16 +91,103 @@
 			</div>
 		</div>
 
-		<div class="slide3">
-			<h3>Course Work Test</h3>
+		<div id="slide3" class="slide3">
+			<h3>Course Work</h3>
+			<div class="course1">
+				<div class="coursecontent">
+					<h4>Systems Integration</h4>
+					<p>Project involved integrating a third party data source (PokeAPI) with a custom front end through a multiple server environment. I was responsible for Project Management, setting up mostly front end and some DMZ functions. I was also responsible for implementing the third party API, web based front end, and project deliverables. Check out the repository <a href="https://github.com/fcp3/IT490-NSFW">here</a>.</p>
+					<ul>
+						<li>Programmed front end in HTML, CSS, JavaScript, and AJAX</li>
+						<li>Integrated front end Apache with messaging queue</li>
+						<li>Programmed DMZ functions in PHP and recorded data through MySQL</li>
+					</ul>
+				</div>
+				<div class="course1img">
+					<a href="https://i.imgur.com/lVBsx8L.png" target="_blank">
+						<img src="https://i.imgur.com/lVBsx8L.png" title="PokeTeams Login Page" alt="PokeTeams Login Page">
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="course2">
+				<h4>System Administration</h4>
+				<p>Introduced the tasks and techniques required to perform as a system administrator of Linux systems. Some of the topics covered were: booting, process control, the file system, managing users and resources, backups, configuration management, networking, the network file system, email servers, security, hardware devices, interoperability and daemons.</p>
+			</div>
+			<div class="course3">
+				<div class="coursecontent">
+					<h4>Cisco Networking Academy</h4>
+					<p>Scaling Networks and CCNA Routing and Switching: Routing and Switching Essentials were completed under a Cisco instructor for my senior level capstone course. Acquired competencies are available in the certificate to the right.</p>
+				</div>
+				<div class="course3img">
+					<a href="https://i.imgur.com/2XI4biZ.png" target="_blank">
+						<img src="https://i.imgur.com/2XI4biZ.png" title="Cisco Academy Certificate of Completion" alt="Cisco Academy Certificate of Completion">
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
 		</div>
 
-		<div class="parallax"></div>
+		<div id="contactpage" class="parallax2">
+			<h3>Contact Me</h3>
+			<div id="linkedin" class="box">
+				<span class="icon">
+					<a href="https://www.linkedin.com/in/humza-mujib-b14361165/" target="_blank">
+						<img src="icons/linkedin.png" title="LinkedIn" alt="LinkedIn">
+					</a>
+				</span>
+			</div>
+			<div id="gmail" class="box">
+				<span class="icon">
+					<a href="mailto:humzakmujib@gmail.com" target="_blank">
+						<img src="icons/gmail.png" title="Gmail" alt="Gmail">
+					</a>
+				</span>
+			</div>
+			<div id="github" class="box">
+				<span class="icon">
+					<a href="https://github.com/hmujib" target="_blank">
+						<img src="icons/github.png" title="Github" alt="Github">
+					</a>
+				</span>
+			</div>
+		</div>
 	</div>
+
+	<footer>
+		
+	</footer>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/css3-animate-it.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+	<script>
+		$("#page1").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#home").offset().top
+		    }, 2000);
+		});
+
+		$("#aboutme").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#slide2").offset().top
+		    }, 2000);
+		});
+
+		$("#coursework").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#slide3").offset().top
+		    }, 2000);
+		});
+
+		$("#contact").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#contactpage").offset().top
+		    }, 2000);
+		});
+
+
+	</script>
 </body>
 </html>

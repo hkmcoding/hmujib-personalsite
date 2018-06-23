@@ -8,18 +8,37 @@
     background: url(../images/parallax.jpg);
 
     /* Full height */
-    height: 612px; 
+    height: auto; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    overflow: hidden;
+
+}
+
+.parallax2 {
+    /* The image used */
+    background: url(../images/parallax.jpg);
+
+    /* Full height */
+    height: auto; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+
 }
 
 #row1, #row2 {
 	text-align: center;
-	height: 300px;
 }
 
 #row1 .box {

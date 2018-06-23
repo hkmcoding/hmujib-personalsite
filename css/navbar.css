@@ -12,8 +12,16 @@
 	padding-right: 30px;
 }
 
-.navbar a {
+#home a {
 	color: #fff;
+}
+
+#home a:hover {
+	cursor: pointer;
+}
+
+#home a:active {
+	background-color:yellow;
 }
 
 .navbar i {
