@@ -8,6 +8,7 @@
 
   	<title>Humza Mujib</title>
   	<link href="css/animations.css" rel="stylesheet" type="text/css">
+
   	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   	<link href="https://fonts.googleapis.com/css?family=Ubuntu:100,300,400,500" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,31 +18,32 @@
   	<link href="css/slide1.css" rel="stylesheet" type="text/css">
   	<link href="css/slide3.css" rel="stylesheet" type="text/css">
   	<link href="css/contact.css" rel="stylesheet" type="text/css">
+  	<link href="css/hover-min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="50">
 	<div id="home" class="content">
 		
-		<nav class="navbar .fixed-top navbar-expand-sm navbar-trans">
+		<nav id="main-nav" class="navbar .fixed-top navbar-expand-sm navbar-trans">
    			<div class="container-fluid">
    				<ul id="top-menu" class="nav navbar-nav mx-auto">
    					<li class="nav-item">
-			      		<a class="nav-link" id="page1">Home
+			      		<a href="#slide1" class="nav-link" id="page1">Home
 			      			<i class="material-icons">home</i>
 			      		</a>
 			    	</li>
 			    	<li class="nav-item">
-			      		<a class="nav-link" id="aboutme">About Me
+			      		<a href="#slide2" class="nav-link" id="aboutme">About Me
 			      			<i class="material-icons">account_box</i>
 			      		</a>
 			    	</li>
 			    	<li class="nav-item">
-			      		<a class="nav-link" id="coursework">Portfolio
+			      		<a href="#slide3" class="nav-link" id="coursework">Portfolio
 			      			<i class="material-icons">perm_media</i>
 			      		</a>
 					</li>
 					<li class="nav-item">
-			      		<a class="nav-link" id="contact">Contact
+			      		<a href="#contactpage" class="nav-link" id="contact">Contact
 			      			<i class="material-icons">contacts</i>
 			      		</a>
 					</li>
@@ -49,7 +51,7 @@
    			</div>
 		</nav>
 
-		<div class="container">
+		<div id="slide1" class="container">
 			<div class="animatedParent animateOnce center" data-sequence='1000'>
 					<h1 class="animated bounceIn delay-250 title" data-id='1'>HUMZA MUJIB</h1>
 					<p class="animated fadeInDownShort paragraph" data-id='2'>I'm a recent B.Sc Information Technology graduate from the New Jersey Institute of Technology. I enjoy web design, entrepreneurship, coding, and much more. Thank you for visiting my personal site, please scroll down to learn more about me!</p>
@@ -132,32 +134,38 @@
 			<h3>Contact Me</h3>
 			<div id="linkedin" class="box">
 				<span class="icon">
-					<a href="https://www.linkedin.com/in/humza-mujib-b14361165/" target="_blank">
-						<img src="icons/linkedin.png" title="LinkedIn" alt="LinkedIn">
+					<a href="https://www.linkedin.com/in/humza-mujib-b14361165/" class="hvr-icon-float" target="_blank">
+						<img src="icons/linkedin.png" class="hvr-icon" title="LinkedIn" alt="LinkedIn">
 					</a>
 				</span>
 			</div>
 			<div id="gmail" class="box">
 				<span class="icon">
-					<a href="mailto:humzakmujib@gmail.com" target="_blank">
-						<img src="icons/gmail.png" title="Gmail" alt="Gmail">
+					<a href="mailto:humzakmujib@gmail.com" class="hvr-icon-float" target="_blank">
+						<img src="icons/gmail.png" class="hvr-icon" title="Gmail" alt="Gmail">
 					</a>
 				</span>
 			</div>
 			<div id="github" class="box">
 				<span class="icon">
-					<a href="https://github.com/hmujib" target="_blank">
-						<img src="icons/github.png" title="Github" alt="Github">
+					<a href="https://github.com/hmujib" class="hvr-icon-float" target="_blank">
+						<img src="icons/github.png" class="hvr-icon" title="Github" alt="Github">
 					</a>
 				</span>
 			</div>
 		</div>
 	</div>
 
-	<footer>
-		
-	</footer>
-
+	<!--
+	<div class="footerholder"> 
+		<div class="footer">
+			<small>&copy; 2018, Humza Mujib
+			<div class="credits">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>, <a href="https://www.flaticon.com/authors/popcorns-arts" title="Icon Pond">Icon Pond</a>, <a href="https://www.flaticon.com/authors/linector" title="Linector">Linector</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</small>	
+		</div>
+	</div>
+	-->
+	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/css3-animate-it.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
@@ -186,7 +194,6 @@
 		        scrollTop: $("#contactpage").offset().top
 		    }, 2000);
 		});
-
 
 	</script>
 </body>
