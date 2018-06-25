@@ -1,6 +1,7 @@
 .slide3 {
 	height: auto;
-	background-color: #EC7063;
+	background-color: #052055;
+	opacity: 0.8;
 }
 
 .slide3 h3 {
@@ -23,7 +24,7 @@
 }
 
 .coursecontent a {
-	color: #1F618D;
+	color: #21c2de;
 	font-weight: 400;
 }
 

@@ -5,7 +5,12 @@
 
 .parallax {
     /* The image used */
-    background: url(../images/parallax.jpg);
+    background: 
+    linear-gradient(
+      rgba(128, 128, 128, 0.7), 
+      rgba(128, 128, 128, 0.7)
+    ),
+    url(../images/parallax.jpg);
 
     /* Full height */
     height: auto; 
@@ -21,8 +26,12 @@
 }
 
 .parallax2 {
-    /* The image used */
-    background: url(../images/parallax.jpg);
+    background: 
+    linear-gradient(
+      rgba(128, 128, 128, 0.3), 
+      rgba(128, 128, 128, 0.3)
+    ),
+    url(../images/parallax.jpg);
 
     /* Full height */
     height: auto; 

@@ -5,7 +5,7 @@
 }
 
 .navbar-trans {
-	background: rgba(211, 211, 211, 0.5);
+	background: rgba(4, 18, 67, 0.5);
 }
 
 .navbar li {
@@ -13,9 +13,8 @@
 }
 
 .nav-link:hover {
+	color: #bebebe;
 	cursor: pointer;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
 }
 
 .navbar i {
@@ -28,7 +27,7 @@
 }
 
 .active {
-	color: black !important;
+	color: #bebebe !important;
 }
 
 .navbar a {
